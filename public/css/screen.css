@@ -691,9 +691,9 @@ form fieldset legend {
   font-size: 20px;
   line-height: 1;
   *margin: 0 0 5px 145px;
+  /* IE6-7 */
   *line-height: 1.5;
   /* IE6-7 */
-
   color: #404040;
 }
 form .clearfix {
@@ -895,9 +895,9 @@ form input.disabled {
 .help-inline {
   padding-left: 5px;
   *position: relative;
+  /* IE6-7 */
   *top: -5px;
   /* IE6-7 */
-
 }
 .help-block {
   display: block;
@@ -955,7 +955,6 @@ form input.disabled {
 .input-prepend .add-on {
   *margin-top: 1px;
   /* IE6-7 */
-
 }
 .input-append input[type=text],
 .input-append input[type=password] {
@@ -1344,7 +1343,6 @@ table .headerSortDown.purple {
   background-color: rgba(255, 255, 255, 0.1);
   *background-color: #444;
   /* IE6-7 */
-
   color: #fff;
 }
 .topbar ul li.menu.open ul {
@@ -1358,7 +1356,6 @@ table .headerSortDown.purple {
   background-color: rgba(255, 255, 255, 0.1);
   *background-color: #444;
   /* IE6-7 */
-
   color: #fff;
 }
 .topbar ul li.menu.open ul li.active a {
@@ -1561,7 +1558,6 @@ footer {
   color: rgba(0, 0, 0, 0.8);
   *color: #404040;
   /* IE 6-7 */
-
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -1572,7 +1568,6 @@ footer {
   color: rgba(0, 0, 0, 0.8);
   *color: #404040;
   /* IE 6-7 */
-
   margin-right: 30px;
   margin-bottom: 0;
 }
@@ -1696,7 +1691,6 @@ footer {
   border-right-color: rgba(0, 0, 0, 0.15);
   *border-right-color: #ddd;
   /* IE6-7 */
-
   text-decoration: none;
 }
 .pagination ul li a:hover,
@@ -1746,7 +1740,6 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.3);
   *border: 1px solid #999;
   /* IE6-7 */
-
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -1906,7 +1899,6 @@ footer {
   background-color: rgba(0, 0, 0, 0.8);
   *background-color: #333;
   /* IE 6-7 */
-
   padding: 3px;
   overflow: hidden;
   width: 280px;
@@ -1945,7 +1937,7 @@ html {
   background: #f6f6f6;
 }
 body {
-  font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   font-size: 15px;
   background: #f6f6f6;
   color: #444;
@@ -1973,8 +1965,7 @@ footer a {
   text-decoration: underline;
 }
 #content {
-  margin: 4em auto;
-  max-width: 43em;
+  margin: 4em 4em;
 }
 #page {
   background: #fff;
@@ -1992,7 +1983,6 @@ footer a {
 #page h1.title {
   margin: -1em -1em 1em -1em;
   padding: 0.7em 1em;
-  background: #fffdef;
   font-size: 1.8em;
   border-bottom: 1px solid #eee;
   -webkit-border-radius: 6px 6px 0 0;
@@ -2011,20 +2001,8 @@ footer a {
   font-size: 0.75em;
 }
 #page a {
-  color: #00998f;
+  color: #004080;
   text-decoration: none;
-}
-#page a.internal {
-  text-decoration: none;
-  padding: 2px 3px;
-  font-family: Monaco, Andale Mono, Courier New, monospace;
-  font-size: 0.75em;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  border: 1px solid #b1edfc;
-  background: #ccf4fe;
-  color: #666;
 }
 #page a.internal.new {
   background: #fecccc;
@@ -2040,7 +2018,7 @@ footer a {
   color: #333;
 }
 #page p {
-  font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
   font-size: 1em;
   line-height: 1.7em;
   margin-bottom: 1.5em;
